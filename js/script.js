@@ -44,9 +44,13 @@ var nuovoStudente = {
 }
 
 listaStudenti.push(nuovoStudente);
-console.log(listaStudenti);
 
 $(document).ready(function() {
   var source = $("#entry-template").html();
   var template = Handlebars.compile(source);
+
+  var contenuto = template(nuovoStudente);
+
+  $(".inizioLista").append(contenuto);
+
 })

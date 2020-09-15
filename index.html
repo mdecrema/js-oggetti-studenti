@@ -8,11 +8,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
   </head>
   <body>
+    <ul class="inizioLista">
+
+    </ul>
+
     <script id="entry-template" type="text/x-handlebars-template">
-      <div class="entry">
-        <h1>{{title}}</h1>
-        <div class="body">{{body}}</div>
-      </div>
+
+        <li class="{{lista}}">
+          {{nome}}
+        </li>
+        <li class="{{lista}}">
+          {{cognome}}
+        </li>
+        <li class="{{lista}}">
+          {{eta}}
+        </li>
+
     </script>
 
     <script type="text/javascript" src="js/script.js"></script>
