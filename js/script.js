@@ -4,10 +4,12 @@ var studente = {
   'cognome': 'rossi',
   'eta': 15
 }
+
 // Stampare le proprietà dell'oggetto attraverso un ciclo 'for in'
 for (var key in studente) {
   console.log(studente[key]);
 }
+
 // Creare un array di oggetti di studenti
 var listaStudenti = [
   {
@@ -22,7 +24,8 @@ var listaStudenti = [
   }
 ];
 
-var listaStudenti.push(studente);
+listaStudenti.push(studente);
+
 // Ciclare su tutti gli studenti e stampare nome e cognome
 for (i = 0; i < listaStudenti.length; i++) {
 
@@ -32,5 +35,13 @@ for (i = 0; i < listaStudenti.length; i++) {
   }
 
 }
+
 // L'utente aggiunge un nuovo oggetto composto da: nome cognome e età
-var nome
+var nuovoStudente = {
+  'nome': prompt("inserisci un nome:"),
+  'cognome': prompt("inserisci un cognome"),
+  'eta': parseInt(prompt("inserisci l'età"))
+}
+
+listaStudenti.push(nuovoStudente);
+console.log(listaStudenti);
